@@ -7,8 +7,8 @@
   "arrowParens": "always",
   "trailingComma": "es5",
   "printWidth": 100,
-  "importOrder": ["^src/(.*)$", "^[./]"],
+  "importOrder": ["src/(.*)$", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
-  "importOrderParserPlugins": ["typescript"]
+  "importOrderParserPlugins": ["typescript", "decorators-legacy"]
 }
