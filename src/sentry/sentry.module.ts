@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common'
-import { SENTRY_MODULE_OPTIONS } from './sentry.constants'
 
+import { SENTRY_MODULE_OPTIONS } from './sentry.constants'
 import { SentryService } from './sentry.service'
 
 export type SentryModuleOptions = {

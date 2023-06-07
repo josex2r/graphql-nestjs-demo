@@ -1,7 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing'
+import * as Sentry from '@sentry/node'
+
 import { SENTRY_MODULE_OPTIONS } from './sentry.constants'
 import { SentryService } from './sentry.service'
-import * as Sentry from '@sentry/node'
 
 jest.mock('@sentry/node', () => ({
   Integrations: { Http: jest.fn() },

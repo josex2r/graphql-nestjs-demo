@@ -1,9 +1,10 @@
-import * as Sentry from '@sentry/node'
 import { Inject, Injectable } from '@nestjs/common'
-import { SentryModuleOptions } from './sentry.module'
-import { SENTRY_MODULE_OPTIONS } from './sentry.constants'
 import { RequestHandler } from '@nestjs/common/interfaces'
-import { ErrorRequestHandler, Request, Response, NextFunction } from 'express'
+import * as Sentry from '@sentry/node'
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express'
+
+import { SENTRY_MODULE_OPTIONS } from './sentry.constants'
+import { SentryModuleOptions } from './sentry.module'
 
 @Injectable()
 export class SentryService {
